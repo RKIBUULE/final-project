@@ -53,8 +53,14 @@ li{
     align-items: center;
 }
 
-.btn{
-
+.btn--generic {
+    padding: 12px 32px;
+    background-color: #6415ff;
+    border-radius: 9999px;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
 }
 
 /* HEADER */
@@ -130,10 +136,6 @@ h3{
     width: 100%;
 }
 
-button{
-  display: inline-block;
-  border-radius: 9999px;
-}
 
 
 /* FEATURES */
@@ -284,4 +286,201 @@ STEPS
 }
 .purple{
    font-weight: 700;
+}
+
+/*
+
+VALUES
+
+ */
+
+ .values__description{
+    display: flex;
+    
+ }
+
+ .values__figure{
+    border: none;
+    width:50%;
+     
+ }
+
+ .values__para{
+    margin-bottom: 0;
+    color: #718096;
+    
+ }
+ .values__btn{
+    margin-top: 48px;
+ }
+ .values__showcase{
+    max-width: 576px;
+    display: flex;
+ }
+
+ .value{
+    display: flex;
+    flex-direction: column;
+    margin: 32px,32px,0,0;
+ }
+ .value__top{
+    display: flex;
+    align-items: center;
+ }
+ .value__label{
+    margin-left: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(36, 62, 99);
+ }
+
+ .value__img--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: #9ae6b4;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.values__img{
+    width: auto;
+    max-height: 450px;
+}
+
+.value__bottom{
+    margin-top: 16px;
+    font-weight: normal;
+    color: rgb(113, 128, 150);
+    line-height: 1.625;
+}
+
+/*
+
+PRICING 
+
+*/
+
+.plans__container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1280px;
+    overflow-x: hidden;
+}
+
+.plan{
+    width: calc(100%/3);
+    /* display: flex;
+    flex-direction: column; */
+    padding-top: 64px;
+    padding-right: 32px;
+    flex-basis: 0;
+    margin-bottom: 10px;
+}
+.plan__card{
+    width: 100%;
+    padding: 8px 32px 0px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 9999px
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px 0 rgba(0,0,0,0.06);
+    position: relative;
+}
+
+.plan__style{
+    height:8px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+.plan__header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:32px 0px;
+}
+
+.plan__name{
+    font-weight: 700;
+    font-size: 20px;
+    color: #1a202c;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.plan__price{
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    color: #1a202c;
+    margin: 4px auto;
+
+}
+
+.plan__duration{
+    font-size: 16px;
+    font-weight: 700;
+    color: #a0ace0;
+}
+.plan__features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    max-width: 382px;
+    margin: 0 -32px;
+    box-sizing: content-box;
+}
+.plan__feature--main{
+    font-size: 20px;
+    color: #1a202c;
+    font-weight: 700;
+    letter-spacing: 00.025em;
+}
+
+.plan__feature{
+    margin-top: 20px;
+    font-size: 16px;
+    color: #718096;
+    font-weight:500;
+    text-align: center;
+}
+.plan__action{
+    padding: 16px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plan__action--btn{
+    padding: 16px 32px;
+    border-radius: 9999px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan__card{
+    max-width: 382px;
+    align-items: center;
+}
+
+.plan__border{
+    border-top: 2px solid #e5e7eb;
+    height: 0.01px;
+    margin: 0 -32px;
+    width: 800px;
+}
+
+.plan__feature--main, .plan__action{
+    max-width: 320px;
+}
+.plan__header, .plan__features, .plan__action{
+    width: 100%;
 }
