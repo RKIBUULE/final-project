@@ -4,7 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    font-size: 105%;
+    /* font-size: 105%; */
 }
 #landing{
     padding: 2rem;
@@ -15,6 +15,7 @@
     margin: 0 auto;
 }
 .container{
+
     padding: 80px 0;
 }
 a{
@@ -72,7 +73,8 @@ header{
     width: 40%;
     display: flex;
     flex-direction: column;
-   
+    /* text-align: center; */
+       
 }
 .right{
     width: 60%;
@@ -129,7 +131,8 @@ h3{
 }
 
 button{
-  
+  display: inline-block;
+  border-radius: 9999px;
 }
 
 
@@ -192,7 +195,7 @@ button{
     width: 50%;
     display: flex;
     flex-direction: column;
-    padding: 0, ;
+    padding:24px ;
  }
  .design__image{
     width: 50%;
@@ -208,4 +211,77 @@ button{
 }
 .h3__title{
    padding: auto;
+}
+.btn__design{
+    font-size: 14px;
+    /* margin-top: 32px; 
+    margin-left: auto; */
+    margin-right: 410px;
+    border-radius: 9999px;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    /* padding:12px,36px; */
+    font-weight: 700;
+    --tw-bg-opacity: 1;
+    background-color: rgba(100,21,255,var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgba(247,250,252,var(--tw-text-opacity));
+}
+
+
+/* 
+
+STEPS
+
+*/
+#Steps .row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.steps__img--wrapper{
+    max-width: 576px;
+    width: 100%;
+}
+.steps__description{
+    max-width: 576px;
+    width: 100%;
+    margin-left: 64px;
+    margin-right: 0;
+}
+.step{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 8px;
+}
+.step__number--wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.step__number{
+    color: #Cbd5e0;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 36px;
+}
+.step__description{
+    margin-left: 24px;
+}
+.step__title{
+    color: #243e63;
+    font-size: 20px;
+    font-weight: 600;
+}
+.step__sub--title{
+    margin-top: 0px;
+    font-size: 14px;
+    color: #718096;
+    font-weight: 500;
+    line-height: 2;
+    max-width: 320px;
+}
+.step__list--header{
+    padding-bottom: 12px;
+}
+.purple{
+   font-weight: 700;
 }
