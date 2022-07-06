@@ -29,6 +29,27 @@ a{
     padding: 0 16px;
 
  }
+ .signup__btn{
+    padding: 12px 32px;
+    background-color: #6415ff;
+    border-radius: 999px;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 9px 0px;
+
+ }
+
+ .email__1{
+    padding: 22px 0;
+    padding-left: 32px;
+    width: 100%;
+    border-radius: 100px;
+    border: 2px solid #e5e7eb;
+    font-size: 16px;
+    font-weight: 500;
+ }
  .logo__img{
     width: 80px;
     padding-right: 16px;
@@ -52,7 +73,21 @@ li{
     justify-content: space-between;
     align-items: center;
 }
-
+.btn{
+    position: absolute;
+    right: 0;
+    margin: 8px 8px 8px 0;
+    padding: 14px 0;
+    width: 160px;
+    border-radius: 9999px;
+    border: none;
+    background-color: #6415ff;
+    font-size: 16px;
+    color: #f7fafc;
+    font-weight: bold;
+    box-sizing: content-box;
+    line-height: 1.5;
+}
 .btn--generic {
     padding: 12px 32px;
     background-color: #6415ff;
@@ -79,8 +114,7 @@ header{
     width: 40%;
     display: flex;
     flex-direction: column;
-    /* text-align: center; */
-       
+    justify-content: space-between;       
 }
 .right{
     width: 60%;
@@ -105,21 +139,10 @@ p{
 }
 
 .input__1{
-    display: flex;
-    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-    padding-left: 2rem;
-    /* padding-top: 1rem; */
-    /* padding-bottom: 1rem; */
-    border-radius: 9999px;
-    border-width: 2px;
-    width: 100%;
-    font-weight: 500;
-    transition-duration: 300ms;
     position: relative;
-    max-width: 28rem;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 448px;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -361,6 +384,24 @@ PRICING
 
 */
 
+.pricing__description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-items: center;
+}
+.pricing__title{
+    padding: 24px;
+    font-size: 20px;
+}
+.pricing__subtitle{
+    font-size: 60px;
+}
+.price__para{
+    margin-bottom: 0;
+}
+
 .plans__container{
     display: flex;
     justify-content: space-between;
@@ -371,12 +412,14 @@ PRICING
 
 .plan{
     width: calc(100%/3);
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 64px;
     padding-right: 32px;
     flex-basis: 0;
     margin-bottom: 10px;
+
 }
 .plan__card{
     width: 100%;
@@ -483,4 +526,113 @@ PRICING
 }
 .plan__header, .plan__features, .plan__action{
     width: 100%;
+}
+.plan__card--2,.plan__style--2{
+    background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%); 
+    color: white;
+}
+.plan__action--btn2{
+   color: blue;
+   background: white;
+}
+
+.plan__action--btn3, .plan__style--3{
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+.plan__name--2,.plan__price--2, .plan__duration--2,.plan__feature--2,.plan__feature--main2{
+    color: white;
+}
+
+/*
+
+FOOTER 
+
+*/
+
+footer{
+    width: 100%;
+    max-height: auto;
+    background-color: #6415ff;
+    padding: 96px 32px; 
+}
+
+footer .row{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__column--links{
+    margin-top: 24px;
+}
+.footer__column--link{
+    display: block;
+    margin-top: 12px;
+    padding-bottom: 12px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+.footer__column--heading{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+.footer__columns{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 50px ;
+}
+
+.footer__border{
+    border-top: 2px solid #e5e7eb;
+    padding: 0;
+    height: 32px;
+    margin: 0px;
+    width: 1200px;
+    
+}
+.footer__socials--logo{
+    display: flex;
+    align-items: center;
+}
+
+.footer__social--imglogo{
+    width: 50px;
+    background-color: white;
+}
+.footer__social--img{
+    width: 32px;
+    height:32px;
+}
+
+.footer__socials--logo h3{
+    font-size: 20px;
+    color: #f7fafc;
+    margin-left: 8px;
+    font-weight: 900;
+}
+.footer__design{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__socials{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer__copyright{
+    color: #cbd5e0;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 100px;
+    margin: 0 200px;
+}
+.footer__social--list{
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
